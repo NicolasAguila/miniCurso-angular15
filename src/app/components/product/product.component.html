@@ -1,9 +1,9 @@
 <ng-container *ngIf="product">
   <h2>{{ product.title }}</h2>
   <p>$ {{ product.price }}</p>
-  <img [src]="product.images[0]" alt="">
+  <img [ngSrc]="product.images[0]" width="640" height="480">
 </ng-container>
 
-<ng-template *ngIf="!product">
-  producto no renderizado y edit para sumar nada mas askdjhasd
-</ng-template>
+<ng-container *ngIf="!product">
+  producto no renderizado
+</ng-container>
